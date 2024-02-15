@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKBYTES</title>
+    <style>
+        body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(255, 255, 255);
+      }
+
+
+      #header {
+        background-color: rgb(183, 228, 225);
+            padding: 5px;
+            display: flex;
+            align-items: center;
+      }
+
+      .search-container {
+        flex: 1;
+        margin-left: 150px;
+        
+      }
+
+      input[type="text"] {
+        width: 300px;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input[type="text"]:focus {
+        width: 400px;
+      }
+
+      .signup a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #nav {
+        background-color: rgb(108, 175, 158);
+        padding: 10px;
+      }
+
+
+      #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+      }
+
+      #nav li {
+            margin-right: 20px;
+            padding-right: 20px;
+      }
+
+      #nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+      }
+
+      #body {
+        height: 500px;
+        padding: 20px;
+      }
+
+      #footer {
+        background-color: #a9a9a9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img src="logo1.jpg"></a>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="&#128269; I wish to read...">
+        </div>
+      
+        <div class="signup"><a href="login.html">Login <a href="register.html">/ Register</a></div>
+    </div>
+      
+    <div id="nav">
+        <ul>
+           <li><a href="index.html"><h2 style="color:black">Home</h2></a></li>
+           <li><a href="books.html"><h2 style="color:black">Our Books</h2></a></li>
+           <li><a href="blog.html"><h2 style="color: black">Blog</h2></a></li>
+           <li><a href="aboutus.html"><h2 style="color:black">About Us</h2></a></li>
+           <li><a href="contactus.html"><h2 style="color:black">Contact Us</h2></a></li>
+        </ul>
+    </div>
+
+    <div id="body">
+      
+      <center><h1>About Us</h1></center><br><br>
+      <h2>Our Mission</h2><hr style="margin-left: 0%;" width="150px">
+      <p style="font-size: 18px;">At Book Bytes Library, our mission is to provide access to wide range of books irrespective of genere and help people learn and enjoy reading, and also we welcome individulas of all ages to explore our world of books and expand their knowledge.</p>
+      <br><br>
+      
+      <h2>History</h2><hr style="margin-left: 0%;" width="100px">
+      <p style="font-size: 18px;">We started Book Bytes Librarya few years ago because we wanted to create a place where people in our community could come together and discover new things. Over time, our library has grown, and we've added more books, programs, and activities to serve you better.</p>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2024 Book Bytes Library. All rights reserved.</p>
+    </div>
+      
+</body>
+</html>

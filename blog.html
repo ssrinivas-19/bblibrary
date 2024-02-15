@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKBYTES</title>
+    <style>
+        body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(255, 255, 255);
+      }
+
+
+      #header {
+        background-color: rgb(183, 228, 225);
+            padding: 5px;
+            display: flex;
+            align-items: center;
+      }
+
+      .search-container {
+        flex: 1;
+        margin-left: 150px;
+        
+      }
+
+      input[type="text"] {
+        width: 300px;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input[type="text"]:focus {
+        width: 400px;
+      }
+
+      .signup a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #nav {
+        background-color: rgb(108, 175, 158);
+        padding: 10px;
+      }
+
+
+      #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+      }
+
+      #nav li {
+            margin-right: 20px;
+            padding-right: 20px;
+      }
+
+      #nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+      }
+
+      #body {
+        height: 100%;
+      }
+
+      .blog {
+        display: flex;
+      }
+
+      .blog1 {
+        text-align: center;
+      }
+
+      .blog1 h2, p {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 10px;
+      }
+
+      #footer {
+        background-color: #a9a9a9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+</head>
+<body>
+  <div id="header">
+    <a href="index.html"><img src="logo1.jpg"></a>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="&#128269; I wish to read...">
+    </div>
+  
+    <div class="signup"><a href="login.html">Login <a href="register.html">/ Register</a></div>
+  </div>
+  
+  <div id="nav">
+    <ul>
+       <li><a href="index.html"><h2 style="color:black">Home</h2></a></li>
+       <li><a href="books.html"><h2 style="color:black">Our Books</h2></a></li>
+       <li><a href="blog.html"><h2 style="color: black">Blog</h2></a></li>
+       <li><a href="aboutus.html"><h2 style="color:black">About Us</h2></a></li>
+       <li><a href="contactus.html"><h2 style="color:black">Contact Us</h2></a></li>
+    </ul>
+  </div>
+
+  <div id="body">
+
+    <div class="Blogs"><br>
+    <center><h1>Discover our latest blogs, news, and updates</h1></center><br><br><br>
+    <h2>Featured Blog</h2><br>
+    <img src="blog11.jpg" width="800px" height="300px" style="border-radius: 15px;">
+    <p style="font-size: 30px;">Top 10 Books to read this Summer</p>
+    <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">As the sun shines brighter and the days grow longer, it's the perfect time to dive into some captivating reads that will transport you to new worlds, inspire your imagination, and ignite your sense of adventure. Here are our top 10 book recommendations to make your summer reading list unforgettable:</p>
+    </div>    
+    <br><br>
+
+    <div class="blog">
+      <div class="blog1">
+        <img src="blog2.webp" style="border-radius: 15px;">
+        <h2>The Literature Review Formula: Key Steps for Academic Excellence</h2>
+        <p>The literature review within an academic research paper stands to provide an understanding of existing literature and discourse within an area Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nobis distinctio aliquam ad, impedit adipisci!</p>
+      </div>
+
+      <div class="blog1">
+        <img src="blog3.webp" style="border-radius: 15px;">
+        <h2>See the Top Reads of September 2023</h2>
+        <p>In a world of boundless knowledge, we remain steadfast in our commitment to be your guide through scholarly research. This past month we Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, neque facilis ex quasi delectus maiores nihil laboriosam voluptates asperiores doloremque.</p>
+      </div>
+
+      <div class="blog1">
+        <img src="blog6.jpg" width="384" height="189" style="border-radius: 15px;">
+        <h2>96 On-Trend Mysteries and Thrillers for You to Read</h2>
+        <p>One of the weird side effects of a serious mystery/thriller reading habit is that you get uncomfortably familiar with certain trends and tropes. Read enough of these crime fiction stories, and you start noticing things. As non-murderers, we really shouldn’t be this familiar with so many murder specifics.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>&copy; 2024 Book Bytes Library. All rights reserved.</p>
+  </div>
+  
+</body>
+</html>

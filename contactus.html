@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKBYTES</title>
+    <style>
+        body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(255, 255, 255);
+      }
+
+
+      #header {
+        background-color: rgb(183, 228, 225);
+            padding: 5px;
+            display: flex;
+            align-items: center;
+      }
+
+      .search-container {
+        flex: 1;
+        margin-left: 150px;
+        
+      }
+
+      input[type="text"] {
+        width: 300px;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input[type="text"]:focus {
+        width: 400px;
+      }
+
+      .signup a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #nav {
+        background-color: rgb(108, 175, 158);
+        padding: 10px;
+      }
+
+
+      #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+      }
+
+      #nav li {
+            margin-right: 20px;
+            padding-right: 20px;
+      }
+
+      #nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+      }
+
+      #body {
+        height: 500px;
+        padding: 20px;
+      }
+
+      #footer {
+        background-color: #a9a9a9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img src="logo1.jpg"></a>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="&#128269; I wish to read...">
+        </div>
+      
+        <div class="signup"><a href="login.html">Login <a href="register.html">/ Register</a></div>
+    </div>
+      
+    <div id="nav">
+        <ul>
+           <li><a href="index.html"><h2 style="color:black">Home</h2></a></li>
+           <li><a href="books.html"><h2 style="color:black">Our Books</h2></a></li>
+           <li><a href="blog.html"><h2 style="color: black">Blog</h2></a></li>
+           <li><a href="aboutus.html"><h2 style="color:black">About Us</h2></a></li>
+           <li><a href="contactus.html"><h2 style="color:black">Contact Us</h2></a></li>
+        </ul>
+    </div>
+
+    <div id="body">
+
+      <h1>Contact Us</h1><br><br>
+      <p style="font-style: italic;">Address: <br>
+        Book Bytes Library, <br>
+        Banjara Hills Road No-2, <br>
+        Banjara Hills, <br>
+        Hyderabad-500034. <br>
+        Ph: <a href="tel:+9846123465">9846123465</a> <br>
+        Email: <a href="mailto:bookbyteslibr@gmail.com">bookbyteslibr@gmail.com</a>
+      </p>  <br><br>
+
+      <p>Follows Us at: <br>
+        <a href="facebook.com"><img src="fbicon.png"></a>
+        <a href="#"><img src="twitter.png"></a>
+      </p>
+      <br><br>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2024 Book Bytes Library. All rights reserved.</p>
+    </div>
+
+    </script>
+</body>
+</html>

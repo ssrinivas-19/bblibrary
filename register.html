@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKBYTES</title>
+    <link rel="stylesheet" href="script.js">
+    <style>
+        body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(255, 255, 255);
+      }
+
+
+      #header {
+        background-color: rgb(183, 228, 225);
+            padding: 5px;
+            display: flex;
+            align-items: center;
+      }
+
+      .signup {
+        margin-left: 980px;
+      }
+
+      .signup a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #nav {
+        background-color: rgb(108, 175, 158);
+        padding: 10px;
+      }
+
+      #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+      }
+
+      #nav li {
+            margin-right: 20px;
+            padding-right: 20px;
+      }
+
+      #nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+      }
+
+      #body {
+        height: 500px;
+        padding: 70px;
+      }
+
+      table {
+            margin: 0 auto;
+      } 
+    
+      #footer {
+        background-color: #a9a9a9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img src="logo1.jpg"></a>
+        <div class="signup"><a href="login.html" onclick="showSection('login')">Login <a href="register.html" onclick="showSection('register')">/ Register</a></div>
+      </div>
+      
+      <div id="nav">
+        <ul>
+           <li><a href="index.html"><h2 style="color:black">Home</h2></a></li>
+           <li><a href="books.html"><h2 style="color:black">Our Books</h2></a></li>
+           <li><a href="blog.html"><h2 style="color: black">Blog</h2></a></li>
+           <li><a href="aboutus.html"><h2 style="color:black">About Us</h2></a></li>
+           <li><a href="contactus.html"><h2 style="color:black">Contact Us</h2></a></li>
+        </ul>
+    </div>
+
+    <div id="body">
+    
+      <section id="register" style="display: block;">
+        <center><h2>Register</h2></center>
+        <table>
+            <tr>
+                <td><label for="firstname">First name:</label></td>
+                <td><input type="text" name="fname" placeholder="Enter your fisrt name"></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last name:</label></td>
+                <td><input type="text" name="lname" placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile-number">Mobile No:</label></td>
+                <td><input type="text" name="mnumber" placeholder="Enter your mobile no."></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" placeholder="Enter your password" required></td>
+            </tr>
+        </table>
+        <center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="showSection('login')">Register</button>
+        <button type="reset">Reset</button><br><br
+        <p>Already have an account? <button><a href="login.html" style="text-decoration: none">Login</a></button></p></center>
+    </section>
+
+    <section id="login" style="display: none;">
+        <center>
+            <h2>User Login</h2>
+            <table>
+                <tr>
+                    <td><label for="login-username">Username:</label></td>
+                    <td><input type="text" id="login-username" placeholder="Enter your username"></td>
+                </tr>
+                <tr>
+                    <td><label for="login-password">Password:</label></td>
+                    <td><input type="password" id="login-password" placeholder="Enter your password"></td>
+                </tr>
+            </table>
+            <button>Login</button>
+        </center>
+    </section>
+
+    </div>
+  
+
+    <div id="footer">
+        <p>&copy; 2024 Book Bytes Library. All rights reserved.</p>
+    </div>
+      
+</body>
+</html>

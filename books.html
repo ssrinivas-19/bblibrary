@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKBYTES</title>
+    <style>
+        body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(255, 255, 255);
+      }
+
+
+      #header {
+        background-color: rgb(183, 228, 225);
+            padding: 5px;
+            display: flex;
+            align-items: center;
+      }
+
+      .search-container {
+        flex: 1;
+        margin-left: 150px;
+        
+      }
+
+      input[type="text"] {
+        width: 300px;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input[type="text"]:focus {
+        width: 400px;
+      }
+
+      .signup a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #nav {
+        background-color: rgb(108, 175, 158);
+        padding: 10px;
+      }
+
+
+      #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+      }
+
+      #nav li {
+            margin-right: 20px;
+            padding-right: 20px;
+      }
+
+      #nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+      }
+
+      #body {
+        height: 100%;
+      }
+
+        
+      .books {
+        border: 20px;
+        padding: 20px;
+      }
+
+      .ourbooks1{
+            display:flex;
+            margin-top:40px;
+      }
+
+      .box1 {
+        padding: 20px;
+      }
+
+      .box1 img{
+            width:120px;
+            height:180px;
+            padding: 30px;
+            margin:10px 10px;
+      }
+
+      #footer {
+        background-color: #a9a9a9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img src="logo1.jpg"></a>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="&#128269; I wish to read...">
+        </div>
+      
+        <div class="signup"><a href="login.html">Login <a href="register.html">/ Register</a></div>
+      </div>
+      
+      <div id="nav">
+        <ul>
+           <li><a href="index.html"><h2 style="color:black">Home</h2></a></li>
+           <li><a href="books.html"><h2 style="color:black">Our Books</h2></a></li>
+           <li><a href="blog.html"><h2 style="color: black">Blog</h2></a></li>
+           <li><a href="aboutus.html"><h2 style="color:black">About Us</h2></a></li>
+           <li><a href="contactus.html"><h2 style="color:black">Contact Us</h2></a></li>
+        </ul>
+    </div>
+
+    <div id="body">
+      <div style="text-align: center;">
+        <div class="search">
+            <h1 class="heading">Search</h1><br>
+            <form action="">
+                <div style="margin-bottom: 10px;">
+                    <label for="category" style="display: inline-block; width: 150px; text-align: right;">Select Category:</label>
+                    <select name="category" id="category">
+                        <option value="poetry">Poetry</option>
+                        <option value="nature">Nature</option>
+                        <option value="biography">Biography</option>
+                        <option value="education">Education</option>
+                        <option value="history">History</option>
+                        <option value="arts">Arts</option>
+                        <option value="philosophy">Philosophy</option>
+                        <option value="mathematics">Mathematics</option>
+                    </select>
+                </div>
+    
+                <div style="margin-bottom: 10px;">
+                    <label for="author" style="display: inline-block; width: 150px; text-align: right;">Select Author:</label>
+                    <select name="author" id="author">
+                        <option value="stephen-hawking">Stephen Hawking</option>
+                        <option value="liz-kessler">Liz Kessler</option>
+                        <option value="rebecca-behrens">Rebecca Behrens</option>
+                        <option value="lois-lowry">Lois Lowry</option>
+                        <option value="los-angeles-times">Los Angeles Times</option>
+                        <option value="nathaniel-philbrick">Nathaniel Philbrick</option>
+                        <option value="peter-stothard">Peter Stothard</option>
+                        <option value="yann-martel">Yann Martel</option>
+                        <option value="jess-walter">Jess Walter</option>
+                        <option value="napoleon-hill">Napoleon Hill</option>
+                        <option value="tj-klune">T.J Klune</option>
+                        <option value="jrr-tolkien">J.R.R Tolkien</option>
+                        <option value="jk-rowling">J.K Rowling</option>
+                        <option value="douglas-adams">Douglas Adams</option>
+                    </select>
+                </div>
+    
+                <div style="margin-bottom: 10px;">
+                    <label for="language" style="display: inline-block; width: 150px; text-align: right;">Select Language:</label>
+                    <select name="language" id="language">
+                        <option value="english">English</option>
+                    </select>
+                </div>
+    
+                <div class="btn" style="margin-top: 10px;">
+                    <input type="submit" value="Search">
+                </div>
+            </form>
+            <br><br><hr>
+        </div>
+    </div>
+    </div>
+
+    <div class="books">
+      <div class="ourbooks1">
+        <div class="box1">
+            <img src="book1.PNG" alt="">
+            <center><p>The Hobbit</p></center>
+        </div>
+        <div class="box1">
+            <img src="book2.PNG" alt="">
+            <p>The Lord Of the Rings</p></center> 
+        </div>
+        <div class="box1">
+            <img src="book3.PNG" alt="">
+            <center><p>The Little Prince</p></center>
+        </div>
+        <div class="box1">
+            <img src="book4.PNG" alt="">
+            <center><p>A Brief History<br> of Time</p></center>
+        </div>
+        <div class="box1">
+          <img src="book5.PNG" alt="">
+          <center><p>The Hitchhiker's <br>
+          Guide to the Galaxy</p></center>
+        </div>
+      </div>
+
+      <div class="ourbooks1">
+        <div class="box1">
+            <img src="book6.PNG" alt="">
+            <center><p>The Famous Five</p></center>
+        </div>
+        <div class="box1">
+            <img src="book7.PNG" alt="">
+            <center><p>Harry Porter</p></center> 
+        </div>
+        <div class="box1">
+            <img src="book8.PNG" alt="">
+            <center><p>The Lord of the Rings</p></center>
+        </div>
+        <div class="box1">
+            <img src="book9.PNG" alt="">
+            <center><p>The House in the Gerulean Sea<br> of Time</p></center>
+        </div>
+        <div class="box1">
+          <img src="book10.PNG" alt="">
+          <center><p>Think and Grow Rich</p></center>
+        </div>
+      </div>
+
+      <div class="ourbooks1">
+        <div class="box1">
+            <img src="book11.PNG" alt="">
+            <center><p>The Cold Millions</p></center>
+        </div>
+        <div class="box1">
+            <img src="book12.PNG" alt="">
+            <center><p>Life of Pie</p></center> 
+        </div>
+        <div class="box1">
+            <img src="book13.PNG" alt="">
+            <center><p>The Last Assassin</p></center>
+        </div>
+        <div class="box1">
+            <img src="book14.PNG" alt="">
+            <center><p>Mody Dick<br> of Time</p></center>
+        </div>
+        <div class="box1">
+          <img src="book15.PNG" alt="">
+          <center><p>Carrie</p></center>
+        </div>
+      </div>
+
+      <div class="ourbooks1">
+        <div class="box1">
+            <img src="book16.PNG" alt="">
+            <center><p>Lord of the Files</p></center>
+        </div>
+        <div class="box1">
+            <img src="book17.PNG" alt="">
+            <p>Alone in the Woods</p></center> 
+        </div>
+        <div class="box1">
+            <img src="book18.PNG" alt="">
+            <center><p>When the World Was Ours</p></center>
+        </div>
+        <div class="box1">
+            <img src="book19.jpg" alt="">
+            <center><p>Martyr!</p></center>
+        </div>
+        <div class="box1">
+          <img src="book20.jpg" alt="">
+          <center><p>Horse</p></center>
+        </div>
+      </div>
+
+      <div class="ourbooks1">
+        <div class="box1">
+            <img src="book21.jpg" alt="">
+            <center><p>Now is Not the Time to Panic</p></center>
+        </div>
+        <div class="box1">
+            <img src="book22.jpg" alt="">
+            <center><p>When the Rain Ends</p></center> 
+        </div>
+        <div class="box1">
+            <img src="book23.jpg" alt="">
+            <center><p>A Plague of Mercies</p></center>
+        </div>
+        <div class="box1">
+            <img src="book24.jpg" alt="">
+            <center><p>Everyone Who is Gone is Here</p></center>
+        </div>
+        <div class="box1">
+          <img src="book25.jpg" alt="">
+          <center><p>A Short History of Trans Misogyny</p></center>
+        </div>
+      </div>
+
+    </div>
+    
+    <div id="footer">
+        <p>&copy; 2024 Book Bytes Library. All rights reserved.</p>
+    </div>
+      
+    
+    
+</body>
+</html>
